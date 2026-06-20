@@ -1,4 +1,4 @@
-import L, { type Map as LeafletMap, type PathOptions } from 'leaflet';
+import L, { type GeoJSON as LeafletGeoJsonLayer, type Map as LeafletMap, type PathOptions } from 'leaflet';
 import type { GameSession, RegionFeature, RegionPack } from '../game/types';
 import { mapConfig } from '../config/map';
 
@@ -24,7 +24,7 @@ export function createMapView(
     maxZoom: config.tileLayer.maxZoom
   }).addTo(map);
 
-  let layer: GeoJSON | null = null;
+  let layer: LeafletGeoJsonLayer | null = null;
 
   function styleForFeature(feature: RegionFeature, session: GameSession): PathOptions {
     if (session.mode === 'learn') {

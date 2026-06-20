@@ -1,7 +1,7 @@
 export const appConfig = {
   title: 'MykoGame',
-  eyebrow: 'Mykolaiv historic regions',
+  eyebrow: 'Історичні місцевості Миколаєва',
   description:
-    'A small educational map game with a learn mode for exploration and a test mode for quiz play.',
+    'Невелика навчальна гра для знайомства з історичними місцевостями Миколаєва: спочатку вивчай, потім перевіряй себе на мапі.',
   defaultPackId: 'mykolaiv-historic'
 } as const;
